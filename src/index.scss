@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100..900&display=swap');
-// @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -91,6 +91,9 @@ input[type=number]::-webkit-outer-spin-button {
 html {
   font-family:  "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   color: #2C2C2C;
+}
+body {
+  min-width: 1400px;
 }
 
 a {
@@ -193,28 +196,325 @@ a {
   margin-top: 20px;
   margin-bottom: 40px;
   .inner {
-    .slick-list {
-      border: 1px solid #000;
+    max-width: 1320px;
+  }
+  .slick-slider {
+    height: 192px;
+    border: 1px solid #000;
+  }
+  .slick-list {
+    // border: 1px solid #000;
+  }
+  // .slick-slide {
+  //   width: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  .slick-arrow {
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    &.slick-prev {
+      z-index: 1;
+      left: 15px;
+      background: url(/public/img/ic_slider_arr_left.svg) center no-repeat;
     }
-    .slick-slide {
-      height: 192px;
+    &.slick-next {
+      z-index: 1;
+      right: 15px;
+      background: url(/public/img/ic_slider_arr_right.svg) center no-repeat;
+    }
+  }
+}
+
+.game-cate {
+  margin: 40px 0;
+  .inner {
+    max-width: 1240px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 52px);
+  }
+  .item {
+    border: 1px solid #C8C8C8;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: #242526;
+    &.ac {
+      border-color: #E21C34;
+      color: #E21C34;
+    }
+    .symbol {
+      margin-left: 16px;
+      height: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      flex: 0 0 0;
+    }
+    .name {
+      flex: 1 0 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.cal-control {
+  margin: 40px 0;
+  .inner {
+    max-width: 1060px;
+    text-align: center;
+    .month {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .dailyControlWrap {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 10px;
     }
-    .slick-arrow {
-      width: 32px;
-      height: 32px;
-      text-indent: -9999px;
-      &.slick-prev {
-        z-index: 1;
-        left: 15px;
-        background: url(/public/img/ic_slider_arr_left.svg) center no-repeat;
+    .prev {
+      width: 30px;
+      height: 30px;
+      background: url(/public/img/ic_arr_blue.svg) center/50% no-repeat;
+      transform: rotate(180deg);
+      border: 0;
+      cursor: pointer;
+    }
+    .next {
+      width: 30px;
+      height: 30px;
+      background: url(/public/img/ic_arr_blue.svg) center/50% no-repeat;
+      border: 0;
+      cursor: pointer;
+    }
+    .dailyControl {
+      display: grid;
+      grid-template-columns: repeat(14, 1fr);
+      gap: 10px;
+      flex: 1 0 0;
+      .dateBtn {
+        aspect-ratio: 1/1;
+        border: 1px solid #AEAFAF;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        &.ac {
+          border-color: #E21C34;
+          color: #E21C34;
+        }
       }
-      &.slick-next {
-        z-index: 1;
-        right: 15px;
-        background: url(/public/img/ic_slider_arr_right.svg) center no-repeat;
+    }
+  }
+}
+
+.filter {
+  .inner {
+    max-width: 1320px;
+    .selectWrap {
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .select {
+        border-radius: 5px;
+        border: 1px solid #4C4C4D;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 30px;
+        background: url(/public/img/ic_arrow_bottom.svg) center right 8px/20px no-repeat;
+      }
+    }
+  }
+}
+.clear-both::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right; 
+}
+.flex-v {
+  display: flex;
+}
+.flex-h {
+  display: flex;
+  flex-direction: column;
+}
+.rel {
+  position: relative;
+}
+
+.scrimList {
+  .inner {
+    max-width: 1280px;
+    .insert_scrim {
+      color: #fff;
+      padding: 16px;
+      padding-left: 50px;
+      background: #282B33 url(/public/img/ic_plus.svg) center left 18px/24px no-repeat;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 16px;
+    }
+    .listGrid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px 26px;
+      .item {
+        height: 280px;
+        border: 1px solid #D2D2D2;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+        .info {
+          padding: 20px;
+          padding-bottom: 0;
+        }
+        .btn {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 42px;
+          background-color: #0FA9FF;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 600;
+          border: 0;
+          border-top: 1px solid #7B6D52;
+        }
+        .top {
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 24px;
+        }
+        .thumb {
+          width: 48px;
+          height: 48px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+          .profile {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .national {
+            position: absolute;
+            right: -4px;
+            bottom: -2px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+        .nickname {
+          font-size: 16px;
+          font-weight: bold;
+          color: #747474;
+        }
+        .state {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 13px;
+          font-weight: bold;
+          color: #00DFA2;
+          margin-bottom: 12px;
+          &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #00DFA2;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+          }
+        }
+        .mid {
+          padding: 0 20px;
+        }
+        .tit {
+          font-size: 16px;
+          font-weight: bold;
+          color: #747474;
+          margin-bottom: 18px;
+        }
+        .count {
+          justify-content: space-between;
+          align-items: center;
+          font-size: 18px;
+          font-weight: bold;
+          color: #AEAFAF;
+          margin-bottom: 5px;
+          .ic {
+            width: 20px;
+            height: 20px;
+            background: url(/public/img/ic_time_20.svg) center/100% no-repeat;
+          }
+          .date {
+
+          }
+          .time {
+
+          }
+        }
+        .bottom {
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          .ic-v {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: url(/public/img/ic-v.png) center no-repeat;
+          }
+          .value {
+            font-size: 26px;
+            font-weight: bold;
+            color: #727F88;
+          }
+        }
+
+        &.play {
+          .state {
+            color: #FF4D37;
+            &::before {
+              background-color: #FF4D37;
+            }
+          }
+          .btn {
+            background-color: #747474;
+          }
+        }
       }
     }
   }
