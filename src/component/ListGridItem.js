@@ -1,6 +1,7 @@
 import React from 'react';
+import Value from './Value';
 
-function ListGridItem({state='', keyword, h2, p, img, tit, item, dis, inner='inner', push, style}) {
+function ListGridItem({state='',}) {
     return <>
 
         <div className={`item ${state}`}>
@@ -28,8 +29,7 @@ function ListGridItem({state='', keyword, h2, p, img, tit, item, dis, inner='inn
                     </div>
                 </div>
                 <div className='flex-v bottom'>
-                    <span className='ic-v'></span>
-                    <span className='value'>20000</span>
+                    <Value />
                 </div>
             </div>
             <button className='btn'>신청하기</button>
