@@ -9,6 +9,7 @@ import Header from '../component/Header';
 import ListGridItem from '../component/ListGridItem';
 
 function Page1() {
+    // hero slide
     const settings = {
         // dots: true,
         infinite: true,
@@ -16,9 +17,11 @@ function Page1() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+
     return <>
         <Header 
-            login='login'
+            // login='login'
         />
 
         <div className='hero'>

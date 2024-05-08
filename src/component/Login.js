@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Login({display}) {
+    // display = 'on'
+
+    const closeModal = () => {
+        display = ''
+    }
+    
     return <>
-        <div className='loginPage'>
+        <div className={`loginPage ${display}`}>
             <div className='loginWrap'>
-                <button className='close'></button>
+                <button className='close' onClick={closeModal}></button>
                 <h2>VSS.GG 로그인</h2>
                 <input className='input' type='text' placeholder='아이디(이메일)'/>
                 <input className='input' type='password' placeholder='비밀번호'/>

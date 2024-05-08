@@ -1,16 +1,26 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import Checkbox from './Checkbox';
 
 function Header({login}) {
     // login = login
+
+
     const [alram, setAlram] = useState('')
     const alramToggle = () => {
         alram === '' ? setAlram('on') : setAlram('')
     }
 
+    // 
     const [profile, setProfile] = useState('')
     const profileToggle = () => {
         profile === '' ? setProfile('on') : setProfile('')
+    }
+
+    // loginModal
+    const [loginModal, setLoginModal] = useState('')
+    const loginOpen = () => {
+        loginModal === '' ? setLoginModal('on') : setLoginModal('')
     }
 
     return <>
@@ -76,7 +86,7 @@ function Header({login}) {
                 </div>
                 <div className={`loginState ${login}`} >
                     <div className=''>
-                        <Link to='/' className='loginBtn'>로그인</Link>
+                        <button className='loginBtn' onClick={loginOpen}>로그인</button>
                     </div>
                     <div className={`rel ${profile}`}>
                         <div className='icon profile' onClick={profileToggle}>
@@ -98,6 +108,31 @@ function Header({login}) {
                 </div>
             </div>
         </header>
+
+        <div className={`loginPage ${loginModal}`}>
+            <div className='loginWrap'>
+                <button className='close' onClick={loginOpen}></button>
+                <h2>VSS.GG 로그인</h2>
+                <input className='input' type='text' placeholder='아이디(이메일)'/>
+                <input className='input' type='password' placeholder='비밀번호'/>
+                <Checkbox label={'자동 로그인'} />
+                <button className='btn-login'>로그인</button>
+                <div className='flex-v find'>
+                    <Link to='/'>ID/PW 찾기</Link>
+                    <span className='divider'></span>
+                    <Link to='/'>회원가입</Link>
+                </div>
+                <div className='sns'>
+                    <div>간편로그인</div>
+                    <ul>
+                        <li><Link to='/'><img src='/img/ic_kakao.svg' alt='ic_kakao'/></Link></li>
+                        <li><Link to='/'><img src='/img/ic_naver.svg' alt='ic_naver'/></Link></li>
+                        <li><Link to='/'><img src='/img/ic_apple.svg' alt='ic_apple'/></Link></li>
+                        <li><Link to='/'><img src='/img/ic_google.svg' alt='ic_google'/></Link></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </>
 }
 

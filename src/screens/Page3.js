@@ -3,7 +3,7 @@ import Header from '../component/Header';
 import Value from '../component/Value';
 import Checkbox from '../component/Checkbox'
 
-function Page2() {
+function Page3() {
     return <>
         <Header />
 
@@ -15,6 +15,12 @@ function Page2() {
                 </div>
                 <div className='cardWrap'>
                     <div className='card'>
+                        <div className='brandBx'>
+                            <div className='imgWrap'>
+                                <img src='/img/brand_iksan.png' alt='brand' />
+                            </div>
+                            닉네임
+                        </div>
                         <div>
                             <h2>제목</h2>
                             <p className='para'>
@@ -34,25 +40,21 @@ function Page2() {
                     </div>
                 </div>
 
-                <button className='blackBtn'>스크림 신청하기</button>
+                
             </div>
         </div>
 
-        {/* 스크림 신청 모달 팝업 */}
+        {/* 최종확인 모달 */}
         <div className='enterScrim modal'>
             <div className='modalSign'></div>
             <div className="modalBody">
-                <div className='top'>
-                    <label>제시포인트:</label>
-                    <input type='text' placeholder='20,000'/>
+                <div className='caution'>
+                    <p>주의사항1</p>
+                    <p>주의사항2</p>
+                    <p>주의사항3</p>
                 </div>
-                <label>요청 사항</label>
-                <textarea placeholder='스크림 시 요청사항을 적어주세요.' />
-                <p>주의사항1</p>
-                <p>주의사항2</p>
-                <p>주의사항3</p>
                 <Checkbox label={'스크림 신청 주의사항을 확인했습니다'} />
-                <button class="blackBtn">스크림 신청</button>
+                <button class="blackBtn">스크림 수락하기</button>
             </div>
         </div>
 
@@ -60,11 +62,11 @@ function Page2() {
         <div className='modal alert'>
             <div className='modalSign'></div>
             <div className="modalBody">
-                신청이 완료되었습니다.
+                스크림 매칭이 완료되었습니다.
                 <button class="blackBtn">확인</button>
             </div>
         </div>
 
     </>
 }
-export default Page2;
+export default Page3;

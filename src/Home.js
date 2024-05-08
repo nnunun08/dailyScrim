@@ -20,8 +20,8 @@ function Home() {
 
         <ul style={ul}>
             <li style={li}><Link to='/Page1'>page1</Link></li>
-            <li style={li}><Link to='/Login'>Login</Link></li>
             <li style={li}><Link to='/Page2'>Page2</Link></li>
+            <li style={li}><Link to='/Page3'>Page3</Link></li>
         </ul>
     ) 
 }
