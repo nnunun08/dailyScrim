@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../component/Header';
 import Value from '../component/Value';
 import Checkbox from '../component/Checkbox'
+import Paging from '../component/Paging';
 
 function Page3() {
     return <>
@@ -40,7 +41,68 @@ function Page3() {
                     </div>
                 </div>
 
-                
+
+                <div className='grid'>
+                    <div className="inner">
+                        <table>
+                            <colgroup>
+                                <col width={'5%'}></col>
+                                <col width={'10%'}></col>
+                                <col width={'30%'}></col>
+                                <col width={'10%'}></col>
+                                <col width={'10%'}></col>
+                            </colgroup>
+                            <tr>
+                                <th className='grid-item'>번호</th>
+                                <th className='grid-item'>작성자</th>
+                                <th className='grid-item'>주요 코칭 방향</th>
+                                <th className='grid-item'>상세보기</th>
+                                <th className='grid-item'>상세보기</th>
+                            </tr>
+                            <tr>
+                                <td className='grid-item'>5</td>
+                                <td className='grid-item'>닉네임</td>
+                                <td className='grid-item'>탑 위주로 봐주세요</td>
+                                <td className='grid-item'><Value color='#000'/></td>
+                                <td className='grid-item'><button className='borderBtn-sm'>수락</button></td>
+                            </tr>
+                            <tr>
+                                <td className='grid-item'>4</td>
+                                <td className='grid-item'>닉네임</td>
+                                <td className='grid-item'>팀합 위주로 봐주세요</td>
+                                <td className='grid-item'><Value color='#000'/></td>
+                                <td className='grid-item'><button className='borderBtn-sm'>수락</button></td>
+                            </tr>
+                            <tr>
+                                <td className='grid-item'>3</td>
+                                <td className='grid-item'>닉네임</td>
+                                <td className='grid-item'>미드 위주로 봐주세요</td>
+                                <td className='grid-item'><Value color='#000'/></td>
+                                <td className='grid-item'><button className='blackBtn-sm'>매칭 완료</button></td>
+                            </tr>
+                            <tr>
+                                <td className='grid-item'>2</td>
+                                <td className='grid-item'>닉네임</td>
+                                <td className='grid-item'>각 포지션 별 상대방 피드백 요청합니다</td>
+                                <td className='grid-item'><Value color='#000'/></td>
+                                <td className='grid-item'><button className='borderBtn-sm'>수락</button></td>
+                            </tr>
+                            <tr>
+                                <td className='grid-item'>1</td>
+                                <td className='grid-item'>닉네임</td>
+                                <td className='grid-item'>탑 위주로 봐주세요</td>
+                                <td className='grid-item'><Value color='#000'/></td>
+                                <td className='grid-item'><button className='borderBtn-sm'>수락</button></td>
+                            </tr>
+                        </table>
+
+                        <div className='grid-bottom'>
+                            <Paging />
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 

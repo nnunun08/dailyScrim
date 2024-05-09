@@ -22,6 +22,10 @@ function Home() {
             <li style={li}><Link to='/Page1'>page1</Link></li>
             <li style={li}><Link to='/Page2'>Page2</Link></li>
             <li style={li}><Link to='/Page3'>Page3</Link></li>
+            <li style={li}><Link to='/Page4'>Page4</Link></li>
+            <li style={li}><Link to='/Page5'>Page5</Link></li>
+            
+            <li style={li}><Link to='/Page9'>Page9</Link></li>
         </ul>
     ) 
 }
