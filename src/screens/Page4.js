@@ -100,7 +100,7 @@ function Page4() {
                 </div>
             </div>
 
-            <div className='center100'>
+            <div className='center50'>
                 <button className='blackBtn-md'>스크림 완료</button>
                 <button className='borderBtn-md'>이의제기</button>
             </div>

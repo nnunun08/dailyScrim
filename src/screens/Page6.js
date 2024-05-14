@@ -7,14 +7,9 @@ function Page6() {
     return <>
         <Header />
 
-        <div className='sub3Wrap'>
-            <div className='inner'>
-                <h2>팀원 모집</h2>
-            </div>
-        </div>
-
         <div className='game-board'>
             <div className='inner'>
+                <h2>팀원 모집</h2>
                 <div className='board'>
                     <h3 className='tit'>제목제목제목제목제목제목</h3>
                     <div className='info'>

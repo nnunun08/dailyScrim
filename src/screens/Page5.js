@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../component/Header';
+import Paging from '../component/Paging';
 
 function Page5() {
 
@@ -195,7 +196,10 @@ function Page5() {
                             <td className='grid-item'><button className='borderBtn-sm'>상세보기</button></td>
                         </tr>
                     </table>
-                    
+
+                    <div className='grid-bottom'>
+                        <Paging />
+                    </div>
                 </div>
 
             </div>

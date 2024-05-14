@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../component/Header';
+import Paging from '../component/Paging';
 
 
 function Page8() {
@@ -66,6 +67,10 @@ function Page8() {
                         </tr>
                         
                     </table>
+
+                    <div className='grid-bottom'>
+                        <Paging />
+                    </div>
                     
                 </div>
 
