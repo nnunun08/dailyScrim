@@ -66,7 +66,7 @@ function Page4() {
             <div className='chatWrap'>
                 <div className='inner'>
                     <div className='msgView'>
-
+                        <div className='dateDivider'>YYYY.MM.DD</div>
                         <div className='receiver'>
                             <div className='profile'></div>
                             <div className='msgWrap'>

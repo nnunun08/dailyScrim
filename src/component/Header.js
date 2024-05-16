@@ -36,7 +36,7 @@ function Header({login}) {
                 <Link to='/'>내정보</Link>
             </div>
             <div className='gnb-right'>
-                <div className='icon lang'></div>
+                {/* <div className='icon lang'></div> */}
                 <div className={`icon alram ${alram}`} onClick={alramToggle} >
                     <div className='alramList'>
                         <div className='tit'>알림</div>

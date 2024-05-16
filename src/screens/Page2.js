@@ -56,11 +56,18 @@ function Page2() {
             </div>
         </div>
 
-        {/* 완료 팝업 */}
         <div className='modal alert'>
             <div className='modalSign'></div>
             <div className="modalBody">
                 신청이 완료되었습니다.
+                <button class="blackBtn">확인</button>
+            </div>
+        </div>
+
+        <div className='modal alert'>
+            <div className='modalSign'></div>
+            <div className="modalBody">
+                URL이 복사되었습니다
                 <button class="blackBtn">확인</button>
             </div>
         </div>
