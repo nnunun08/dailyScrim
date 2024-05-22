@@ -32,7 +32,7 @@ function Page10() {
 
                     <textarea></textarea>
 
-                    <button className='blackBtn'>수정 완료</button>
+                    <button className='redBtn'>수정 완료</button>
                 </div>
 
                 <div className='bottom'>

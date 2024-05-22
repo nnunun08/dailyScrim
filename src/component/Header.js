@@ -2,10 +2,9 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Checkbox from './Checkbox';
 
-function Header({login}) {
+function Header({login, page1, page2, page3, page4}) {
+
     // login = login
-
-
     const [alram, setAlram] = useState('')
     const alramToggle = () => {
         alram === '' ? setAlram('on') : setAlram('')
@@ -30,10 +29,10 @@ function Header({login}) {
                     <img src='/img/logo_dailyscrim.png' alt='logo' />
                 </Link>
                 
-                <Link to='/'>스크림</Link>
-                <Link to='/'>팀원 모집</Link>
-                <Link to='/'>랭킹</Link>
-                <Link to='/'>내정보</Link>
+                <Link className={page1} to='/'>스크림</Link>
+                <Link className={page2} to='/'>팀원 모집</Link>
+                <Link className={page3} to='/'>랭킹</Link>
+                <Link className={page4} to='/'>내정보</Link>
             </div>
             <div className='gnb-right'>
                 {/* <div className='icon lang'></div> */}

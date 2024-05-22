@@ -9,7 +9,7 @@ function Page8() {
         marginTop : '40px'
     }
     return <>
-        <Header />
+        <Header page3={'ac'} />
 
         <div className='sub3Wrap'>
             <div className='inner'>

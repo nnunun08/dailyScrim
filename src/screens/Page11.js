@@ -50,7 +50,7 @@ function Page11() {
                 </div>
 
                 <div className='bottom'>
-                    <button className='blackBtn'>회원가입</button>
+                    <button className='redBtn'>회원가입</button>
                 </div>
             </div>
         </div>

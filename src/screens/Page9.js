@@ -66,27 +66,27 @@ function Page9() {
                                     <td className='grid-item'>이스포츠코리아</td>
                                     <td className='grid-item'>자기 소개 멘트</td>
                                     <td className='grid-item'>YY.MM.DD hh:mm</td>
-                                    <td className='grid-item'><button className='greyBtn-sm'>쪽지 보내기</button></td>
+                                    <td className='grid-item'><button className='redBtn-sm'>쪽지 보내기</button></td>
                                     <td className='grid-item'><button className='borderBtn-sm'>삭제</button></td>
                                 </tr>
                                 <tr>
                                     <td className='grid-item'>이스포츠코리아</td>
                                     <td className='grid-item'>자기 소개 멘트</td>
                                     <td className='grid-item'>YY.MM.DD hh:mm</td>
-                                    <td className='grid-item'><button className='greyBtn-sm'>쪽지 보내기</button></td>
+                                    <td className='grid-item'><button className='redBtn-sm'>쪽지 보내기</button></td>
                                     <td className='grid-item'><button className='borderBtn-sm'>삭제</button></td>
                                 </tr>
                                 <tr>
                                     <td className='grid-item'>이스포츠코리아</td>
                                     <td className='grid-item'>자기 소개 멘트</td>
                                     <td className='grid-item'>YY.MM.DD hh:mm</td>
-                                    <td className='grid-item'><button className='greyBtn-sm'>쪽지 보내기</button></td>
+                                    <td className='grid-item'><button className='redBtn-sm'>쪽지 보내기</button></td>
                                     <td className='grid-item'><button className='borderBtn-sm'>삭제</button></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
-                    <div className='btnWrap'><button className='blackBtn-md'>친구 관리</button></div>
+                    <div className='btnWrap'><button className='redBtn-md'>친구 관리</button></div>
                 </div>
 
                 <div className='planWrap'>

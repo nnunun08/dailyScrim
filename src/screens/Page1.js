@@ -22,6 +22,7 @@ function Page1() {
     return <>
         <Header 
             // login='login'
+            page1={'ac'}
         />
 
         <div className='hero'>

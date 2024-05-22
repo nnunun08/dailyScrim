@@ -37,7 +37,7 @@ function Page7() {
                 </div>
 
                 <div className='bottom'>
-                    <button className='blackBtn-md'>등록</button>
+                    <button className='redBtn-md'>등록</button>
                 </div>
 
             </div>

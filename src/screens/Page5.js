@@ -11,7 +11,9 @@ function Page5() {
         marginRight : `60px`
     }
     return <>
-        <Header />
+        <Header
+            page2={'ac'}
+        />
 
         <div className='sub3Wrap'>
             <div className='inner'>

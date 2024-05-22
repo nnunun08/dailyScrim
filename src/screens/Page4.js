@@ -5,7 +5,9 @@ import Checkbox from '../component/Checkbox'
 
 function Page4() {
     return <>
-        <Header />
+        <Header
+            page1={'ac'}
+        />
 
         <div className='sub2Wrap'>
             <div className='inner'>

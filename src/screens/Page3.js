@@ -6,7 +6,9 @@ import Paging from '../component/Paging';
 
 function Page3() {
     return <>
-        <Header />
+        <Header
+            page1={'ac'}
+        />
 
         <div className='sub2Wrap'>
             <div className='inner'>

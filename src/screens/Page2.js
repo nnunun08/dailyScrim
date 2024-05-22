@@ -5,7 +5,9 @@ import Checkbox from '../component/Checkbox'
 
 function Page2() {
     return <>
-        <Header />
+        <Header
+            page1={'ac'}
+        />
 
         <div className='sub2Wrap'>
             <div className='inner'>
@@ -34,7 +36,7 @@ function Page2() {
                     </div>
                 </div>
 
-                <button className='blackBtn'>스크림 신청하기</button>
+                <button className='redkBtn'>스크림 신청하기</button>
             </div>
         </div>
 
