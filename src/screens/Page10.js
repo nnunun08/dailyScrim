@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../component/Header';
+import ComboBox from '../component/ComboBox'
 
 
 function Page10() {
@@ -47,9 +48,14 @@ function Page10() {
             회원 탈퇴
             </div>
             <div className="modalBody">
-                <select>
-                    <option>회원탈퇴 사유</option>
-                </select>
+                <ComboBox
+                    value={'회원탈퇴 사유'}
+                    option={
+                        <>
+                            <option>회원탈퇴 사유</option>
+                        </>
+                    }
+                />
 
                 <div className='guide'>회원탈퇴 희망 시 “탈퇴에 동의합니다”를 적어주세요.</div>
                 <input type='text' placeholder='탈퇴에 동의합니다.' />

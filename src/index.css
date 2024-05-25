@@ -143,8 +143,7 @@ h2 {
 
 .insert_scrim {
   color: #fff;
-  padding: 16px;
-  padding-left: 50px;
+  padding: 17px 16px 16px 50px;
   background: #E21C34 url(/public/img/ic_plus.svg) center left 18px/24px no-repeat;
   border: 0;
   border-radius: 12px;
@@ -170,6 +169,7 @@ h2 {
   align-items: center;
   margin: 0 auto;
   border: 0;
+  padding-top: 1px;
 }
 
 .redBtn {
@@ -184,6 +184,7 @@ h2 {
   align-items: center;
   margin: 0 auto;
   border: 0;
+  padding-top: 1px;
 }
 
 .borderBtn {
@@ -198,6 +199,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 1px;
 }
 
 .checkboxWrap {
@@ -250,6 +252,7 @@ h2 {
   min-width: 70px;
   height: 21px;
   position: relative;
+  padding-top: 3px;
 }
 .borderBtn-sm .new {
   position: absolute;
@@ -271,6 +274,7 @@ h2 {
   min-width: 70px;
   height: 21px;
   border: 0;
+  padding-top: 3px;
 }
 
 .greyBtn-sm {
@@ -283,6 +287,7 @@ h2 {
   min-width: 56px;
   height: 21px;
   border: 0;
+  padding-top: 3px;
 }
 
 .redBtn-sm {
@@ -295,6 +300,7 @@ h2 {
   min-width: 56px;
   height: 21px;
   border: 0;
+  padding-top: 3px;
 }
 
 .blueBtn-sm {
@@ -307,6 +313,7 @@ h2 {
   min-width: 56px;
   height: 21px;
   border: 0;
+  padding-top: 3px;
 }
 
 .borderBtn-md {
@@ -390,6 +397,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 70px;
+  padding-top: 2px;
   height: 30px;
   border: 0;
   border-radius: 4px;
@@ -709,9 +717,57 @@ h2 {
   border: 1px solid #4C4C4D;
   padding: 12px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   padding-right: 30px;
   background: url(/public/img/ic_arrow_bottom.svg) center right 8px/20px no-repeat;
+}
+
+.comboBox {
+  position: relative;
+}
+.comboBox .select {
+  border-radius: 5px;
+  border: 1px solid #4C4C4D;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 30px;
+  background: url(/public/img/ic_arrow_bottom.svg) center right 8px/20px no-repeat;
+  display: flex;
+  align-items: center;
+}
+.comboBox .select .body {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #4C4C4D;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom-width: 0;
+}
+.comboBox .select .body option {
+  display: none;
+  padding: 0 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.comboBox .select .body option:hover {
+  background-color: #D3D3D3;
+}
+.comboBox.ac .select .body {
+  padding: 12px 0;
+  border-bottom-width: 1px;
+}
+.comboBox.ac .select .body option {
+  display: block;
 }
 
 .scrimList .inner {
@@ -964,7 +1020,7 @@ h2 {
 .sub2Wrap .inner .urlCopy {
   min-width: 100px;
   font-size: 18px;
-  padding: 8px 13px;
+  padding: 9px 13px 8px;
   border: 1px solid #A9A9A9;
   border-radius: 6px;
   background-color: white;
@@ -2347,6 +2403,7 @@ h2 {
   justify-content: center;
 }
 .inquery .goldBtn {
+  padding-top: 2px;
   opacity: 0.6;
   height: 60px;
   width: 384px;

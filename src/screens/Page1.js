@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Header from '../component/Header';
 import ListGridItem from '../component/ListGridItem';
+import ComboBox from '../component/ComboBox';
+
 
 function Page1() {
     // hero slide
@@ -162,15 +164,33 @@ function Page1() {
         <div className='filter'>
             <div className='inner'>
                 <div className="selectWrap">
-                    <select className='select'>
-                        <option>서버</option>
-                    </select>
-                    <select className='select'>
-                        <option>희망 시간대</option>
-                    </select>
-                    <select className='select'>
-                        <option>현재 상태</option>
-                    </select>
+                    <ComboBox
+                        value={'서버'}
+                        option={
+                            <>
+                                <option>서버</option>
+                                <option>서버</option>
+                            </>
+                        }
+                    />
+                    <ComboBox
+                        value={'희망 시간대'}
+                        option={
+                            <>
+                                <option>희망 시간대</option>
+                                <option>희망 시간대</option>
+                            </>
+                        }
+                    />
+                    <ComboBox
+                        value={'현재 상태'}
+                        option={
+                            <>
+                                <option>현재 상태</option>
+                                <option>현재 상태</option>
+                            </>
+                        }
+                    />
                 </div>
             </div>
         </div>

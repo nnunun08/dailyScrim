@@ -36,7 +36,7 @@ function Page2() {
                     </div>
                 </div>
 
-                <button className='redkBtn'>스크림 신청하기</button>
+                <button className='redBtn'>스크림 신청하기</button>
             </div>
         </div>
 

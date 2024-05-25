@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../component/Header';
 import Value from '../component/Value';
 import Checkbox from '../component/Checkbox'
 import Paging from '../component/Paging';
+import ComboBox from '../component/ComboBox';
 
 function Page9() {
+
+
     return <>
         <Header />
 
@@ -92,9 +95,20 @@ function Page9() {
                 <div className='planWrap'>
                     <div className="flex-v sectionTit">
                         <h2>일정</h2>
-                        <select className='select'>
-                            <option>매칭 여부</option>
-                        </select>
+
+                        <ComboBox 
+                            comboWidth={
+                                {width: 120 + 'px'}
+                            }
+                            value={'매칭 여부'}
+                            option={
+                                <>
+                                    <option>매칭 여부2</option>
+                                    <option>매칭 여부3</option>
+                                    <option>매칭 여부4</option>
+                                </>
+                            }
+                        />
                     </div>
                     <div className='grid'>
                         <div className="inner">
@@ -172,9 +186,17 @@ function Page9() {
                     </div>
                 </div>
                 <div className='pointMiddle'>
-                    <select className='select'>
-                        <option>은행</option>
-                    </select>
+
+                    <ComboBox 
+                        value={'은행'}
+                        option={
+                            <>
+                                <option>은행2</option>
+                                <option>은행3</option>
+                                <option>은행4</option>
+                            </>
+                        }
+                    />
                     <input type='text' placeholder='계좌번호' />
                 </div>
 
