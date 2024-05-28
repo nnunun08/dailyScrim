@@ -95,7 +95,21 @@ function Page1() {
 
         <div className='cal-control'>
             <div className='inner'>
-                <div className='month'>3월</div>
+                <div className='month'>
+                    <select name="" id="">
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                    </select></div>
                 <div className='dailyControlWrap'>
                     <button className='prev'></button>
                     <div className='dailyControl'>
@@ -164,24 +178,6 @@ function Page1() {
         <div className='filter'>
             <div className='inner'>
                 <div className="selectWrap">
-                    <ComboBox
-                        value={'서버'}
-                        option={
-                            <>
-                                <option>서버</option>
-                                <option>서버</option>
-                            </>
-                        }
-                    />
-                    <ComboBox
-                        value={'희망 시간대'}
-                        option={
-                            <>
-                                <option>희망 시간대</option>
-                                <option>희망 시간대</option>
-                            </>
-                        }
-                    />
                     <ComboBox
                         value={'현재 상태'}
                         option={

@@ -9,7 +9,9 @@ function Page9() {
 
 
     return <>
-        <Header />
+        <Header
+            page4={'ac'}
+        />
 
         <div className='sub2Wrap'>
             <div className='inner'>

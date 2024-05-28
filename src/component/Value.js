@@ -1,6 +1,6 @@
 import React from "react"
 
-function Value({color, value=`20000`}) {
+function Value({color, value=`20,000`}) {
     const style = {
         color : color
     }

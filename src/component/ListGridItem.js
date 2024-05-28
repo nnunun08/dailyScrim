@@ -21,7 +21,7 @@ function ListGridItem({state='',}) {
                     대기중
                 </div>
                 <div className='mid'>
-                    <div className='tit'>스크림 제목</div>
+                    <div className='tit'>스크림 제목스크림 제목스크림 제목스크림 제목스크림 제목스크림 제목스크림 제목스크림 제목스크림 제목</div>
                     <div className='count flex-v'>
                         <span className='ic'></span>
                         <span className='date'>02/27</span>
