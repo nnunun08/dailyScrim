@@ -94,7 +94,7 @@ function Page5() {
                         </tr>
                         <tr>
                             <td className='grid-item'>20</td>
-                            <td className='grid-item'>이스포츠코리아에서 탑을 구합니다</td>
+                            <td className='grid-item'>123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123</td>
                             <td className='grid-item'>닉네임</td>
                             <td className='grid-item'>YY.MM.DD hh:mm</td>
                             <td className='grid-item'><button className='borderBtn-sm'>상세보기</button></td>

@@ -1520,6 +1520,9 @@ h2 {
   font-weight: 400;
   padding: 4px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .grid .grid-item [class*=sm] {
   padding-left: 4px;
