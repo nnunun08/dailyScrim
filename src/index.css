@@ -1868,6 +1868,7 @@ h2 {
   min-height: 340px;
   font-size: 23px;
   line-height: 1.4;
+  word-break: break-all;
 }
 .game-board .comment {
   background-color: #EFEFEF;
