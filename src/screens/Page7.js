@@ -26,7 +26,7 @@ function Page7() {
                             제목: 
                             </th>
                             <td>
-                                <input type='text' value={'제목'} />
+                                <input type='text' />
                             </td>
                         </tr>
                     </table>
